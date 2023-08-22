@@ -1,0 +1,48 @@
+.Form{
+    width: 100%;
+    max-width: 1280px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #BEADFA;
+    border-radius: 20px;
+    height: 570px;
+    width: 570px;
+
+
+    > h2{
+        color: #C70039;
+    }
+}
+
+input{
+    width: 100%;
+    max-width: 320px;
+    padding: 10px;
+    margin: 15px;
+    border-radius: 11px;
+    outline: none;
+    border: none;
+    background-color: #DFCCFB;
+}
+
+button{
+    background: #D0BFFF;
+    border: none;
+    width: 100%;
+    max-width: 120px;
+    padding: 10px;
+    margin: 15px;
+    border-radius: 11px;
+    color: #ffff;
+    font-weight: 600;
+}
