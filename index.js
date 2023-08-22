@@ -4,31 +4,29 @@ var form = document.querySelector('form')
 var message = document.getElementById('message')
 const erro_message = `Isso não ta legal B deve ser maio que A`
 const sussec_message = `Muito bem :)`
+const igual_message = `Não e valido pois B é igual A!`
 
-function verifica(){
+function verifica(inputA,inputB){
+    return inputA > inputB
+}
+
+form.addEventListener('submit', function(e) {
+
+    e.preventDefault();
+
     var inputA = document.getElementById('inputA')
     var inputB = document.getElementById('inputB')
 
-    if(inputA.value > inputB.value){
-        message.innerHTML = erro_message
-    }else{
-        message.innerHTML = sussec_message
-    }if(inputA.value === inputB.value){
+    formValido = verifica(inputA.value ,inputB.value);
+
+    if(formValido){
         message.innerHTML = erro_message
     }else{
         message.innerHTML = sussec_message
     }
-
-    setTimeout(()=>{
-        message.innerHTML = ''
-    },30000)
     
-        inputA.value = ''
-        inputB.value = ''
-}
-
-form.addEventListener('submit', function(e) {
-    e.preventDefault();
+    inputA.value = ''
+    inputB.value = ''
 })
 
 button.addEventListener('click', function(){
