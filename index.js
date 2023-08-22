@@ -21,10 +21,11 @@ form.addEventListener('submit', function(e) {
 
     if(formValido){
         message.innerHTML = erro_message
+        message.style.color = '#FF1E1E'
     }else{
         message.innerHTML = sussec_message
+        message.style.color = '#16FF00'
     }
-    
     inputA.value = ''
     inputB.value = ''
 })
