@@ -14,14 +14,13 @@ $(document).ready(function() {
 
         novoItem.appendTo(div)
 
+        $(il).click(function(){
+
+            $(this).addClass('licheck')
+        })
+
+
         $('#put').val('')
 
-
-            $(il).click(function(){
-
-                $('li').addClass('licheck')
-            })
-
-        console.log(div)
     })
 })
